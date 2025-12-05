@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Florent Chaltin - Monteur Vidéo Junior</title>
+</head>
+<body>
+    <div>
+    <header data-aos="fade-down" data-aos-duration="500">
+        <div>
+            <h1>Florent Chaltin - Monteur Vidéo</h1>
+        </div>
+    </header>
+    <section id="hero" data-aos="fade" class="aldrich-regular">
+        <div>
+            <h2 class="fancy-title">Portfolio</h2>
+            <p id="hero-text" class="fancy-text"><span>Vidéo<br>Montage<br>Création</span></p>
+            <a class="btn-cta btn-cta-hero" href="#present" data-aos="fade-down" data-aos-delay="500">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+        <video id="myVideo" autoplay loop muted playsinline>
+            <source src="images/galaxy-bg.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section id="present" class="present">
+        <h3 data-aos="fade-right">Présentation</h3>
+        <div class="present__wrap">
+            <img class="present__img" src="images/avatar.png" alt="avatar" data-aos="fade-right" data-aos-delay="222">
+            <p class="present__text" data-aos="fade-right" data-aos-delay="333" >
+                Passionné de jeux vidéo, grand consommateur de vidéos en ligne et amateur d’animation et de culture japonaise, j’ai toujours été attiré par les univers visuels et interactifs.<br>
+                La technologie, la narration et le montage sont pour moi des moyens de créer des ambiances et de transmettre des émotions — c’est ce qui m’a naturellement conduit vers la vidéo.
+            </p>
+        </div>
+        <a class="btn-cta" href="#gallery" data-aos="fade-right" data-aos-delay="444">
+            <i class="fa-solid fa-arrow-down"></i>
+            <span>Voir les projets</span>
+        </a>
+    </section>
+    <hr/>
+    <section id="gallery">
+        <h3 data-aos="fade-right">Galerie</h3>
+        <p data-aos="fade-right" >Une sélection de projets réalisés pour explorer différents formats : reportage, trailer, publicité, clip...<br>
+        Tous les montages sont faits sous <strong>DaVinci Resolve</strong>, à partir de contenus libres de droits (à l'exception des musiques).<br>
+        L’objectif : tester différents tons, styles et ambiances, sans aucun élément généré par intelligence artificielle.</p>
+        <div id="overlay" class="hidden">
+            <div id="modal">
+                <div id="modal-title">
+                    <h4>Titre</h4>
+                    <button id="closeBtn">✕</button>
+                </div>
+                <div id="modal-wrap">
+                    <video id="modalVideo" controls></video>
+                    <p>Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__video" data-aos="fade-right">
+            <div class="gallery__video__card" data-aos="fade-right"  data-video="Lvl 1 - Coffe & Chill V1">
+                <img class="card__image" src="images/minia-lvl1.png" alt="">
+                <h4>Coffee and Chill</h4>
+                <p class="hidden">Le ‘client’ voulait une vidéo verticale pour promouvoir son café sur les réseaux. J’ai choisi des plans d’ambiance et des baristas, en suivant le rythme chill de la musique. Les plans de salle sont plus longs pour laisser apprécier l’espace, les plans suivants plus rythmés.</p>
+            </div>
+            <div class="gallery__video__card" data-aos="fade-right" data-video="Lvl 2 - Lost Woods bar" >
+               <img class="card__image" src="images/minia-lvl2.png" alt="">
+                <h4>Lost Woods Bar</h4>
+                <p class="hidden">Le thème était "Evening Vibes – Afterwork Chill". Une ambiance de début de soirée, d'un moment de détente après une journée de travail, avec une musique à la fois lente et rythmée.</p>
+            </div>
+            <div class="gallery__video__card" data-aos="fade-right" data-video="Lvl 3 - Reportage" >
+               <img class="card__image" src="images/minia-lvl3.png" alt="">
+                <h4>Reportage Nasdaq</h4>
+                <p class="hidden">Pour diversifier le portfolio, j’ai voulu réaliser un format reportage. L’objectif était d’articuler une narration cohérente à partir d’images d’archives et d’une voix off, en travaillant surtout le rythme, la structure et la clarté du propos.</p>
+            </div>
+            <div class="gallery__video__card" data-aos="fade-right" data-video="Lvl 4 - Bande annonce" >
+               <img class="card__image" src="images/minia-lvl4.png" alt="">
+                <h4>L'aventure commence ici (Trailer)</h4>
+                <p class="hidden">Un type de vidéo que je voulait absolument essayer était le trailer. La voix off que j’ai trouvée avait une vibe d’aventure qui m’a tout de suite inspiré, alors j’ai construit le montage autour de cette énergie : rythme qui monte, images choisies pour pousser le côté épique, et une ambiance un peu ciné.</p>
+            </div>
+            <div class="gallery__video__card" data-aos="fade-right" data-video="Lvl 5 - Pub" >
+               <img class="card__image" src="images/minia-lvl5.png" alt="">
+                <h4>Publicité Forem</h4>
+                <p class="hidden">Je voulais tester un format pub. Ici, j’ai choisi une voix off neutre, sans bruitages, ce qui me permettait de construire librement le rythme, les transitions et l’ambiance visuelle.</p>
+            </div>
+            <div class="gallery__video__card" data-aos="fade-right" data-video="Lvl 6 - Clip" >
+               <img class="card__image" src="images/minia-lvl6.png" alt="">
+                <h4>Radio - Beshy (Clip)</h4>
+                <p class="hidden">Ma vidéo préférée du portfolio (pour le moment). J’ai réussi à trouver une belle série de plans qui collent bien aux paroles et à l’ambiance générale du morceau.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <h3 data-aos="fade-right">Me contacter</h3>
+        <p data-aos="fade-right">Si vous avez un projet vidéo, une demande, ou simplement envie d’en discuter,<br> n’hésitez pas à me contacter.<br> Je suis ouvert aux collaborations, missions freelance ou opportunités dans le secteur audiovisuel.</p>
+        <a class="btn-cta" href="chaltin.florent@gmail.com" data-aos="fade-right">
+            <i class="fa-solid fa-envelope"></i>
+            <span>chaltin.florent@gmail.com</span>
+        </a>
+    </section>
+    <footer>
+        <p>
+            Chaltin Florent - Portfolio 2025.<br>
+            Sources: Pexels, Pixabay, tmpvoices, epidemic sound
+        </p>
+    </footer>
+</body>
+</html>
