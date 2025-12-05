@@ -15,11 +15,16 @@
     card.addEventListener('click', function() {
       console.log(card.dataset.video);
       
-      let videoSrc = 'videos/'+card.dataset.video+'.mp4'; // Remplacez par la source réelle de la vidéo
+      let videoSrc = 'https://drive.google.com/file/d/'+card.dataset.video+'/preview'; // Remplacez par la source réelle de la vidéo
       let videoTitle = card.childNodes[3].innerHTML; // Titre de la vidéo depuis le h4
       modalVideo.src = videoSrc;
       modalTitle.textContent = videoTitle;
       midalDescription.textContent = card.childNodes[5].innerHTML;
+      if(card.dataset.format === "vertical"){
+        modalVideo.id = "modalVideo-vetical";
+      }else{
+        modalVideo.id = "modalVideo";
+      }
       overlay.classList.remove('hidden');
       document.body.style.overflow = 'hidden';
      
