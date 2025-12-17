@@ -360,7 +360,9 @@ h4::before{
   border-bottom: 2px solid #FF6B00;
   border-left: 2px solid #FF6B00;
 }
-
+.fancy-text{
+    width: 10%;
+}
 .fancy-text::before{
     content: "";
     position: absolute;
@@ -499,21 +501,38 @@ footer{
     }
     #hero p{
         font-size: 42px;
-        margin-left: 20%;
+        margin: 0;
+        align-self: center;
+        width: auto;
+    }
+    #hero-text{
+        text-align: center;
+    }
+    .fancy-text{
+        width: 70%;
     }
     .fancy-text::before{
         width: 2px;   /* longueur du trait horizontal */
-        height: 240px;  /* longueur du trait vertical */
+        height: 106px;  /* longueur du trait vertical */
+        background: linear-gradient(to bottom, #FF6B00, #FF6B00, #FF6B00);
+
     }
     .fancy-text::after{
-        width: 66px;   /* longueur du trait horizontal */
-        height: 20px;  /* longueur du trait vertical */
-        border-top: 2px solid #FF6B00;
+        top: inherit;
+        left: inherit;
+        right: 0;
+        bottom: 0;
+        width: 20px;   /* longueur du trait horizontal */
+        height: 66px;  /* longueur du trait vertical */
+        border-right: 2px solid #FF6B00;
+        border-top: none;
     }
     .fancy-text span::after{
-        width: 132px;   /* longueur du trait horizontal */
-        height: 20px;  /* longueur du trait vertical */
-        border-bottom: 2px solid #FF6B00;;
+        width: 565px;   /* longueur du trait horizontal */
+        height: 2px;  /* longueur du trait vertical */
+        background: linear-gradient(to right, #FF6B00, #ff3700, #FF6B00);
+        border: none;
+
     }
     .btn-cta-hero{
         padding: 32px 32px;
