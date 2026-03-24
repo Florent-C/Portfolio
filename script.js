@@ -13,9 +13,12 @@
   
   videoCard.forEach(card => {    
     card.addEventListener('click', function() {
-      console.log(card.dataset.video);
-      
-      let videoSrc = 'https://drive.google.com/file/d/'+card.dataset.video+'/preview'; // Remplacez par la source réelle de la vidéo
+      let videoSrc;
+      if (card.dataset.yt) {
+        videoSrc = 'https://www.youtube.com/embed/'+card.dataset.yt;// Remplacez par la source réelle de la vidéo
+      } else {
+        videoSrc = 'https://drive.google.com/file/d/'+card.dataset.video+'/preview'; // Remplacez par la source réelle de la vidéo
+      }
       let videoTitle = card.childNodes[3].innerHTML; // Titre de la vidéo depuis le h4
       modalVideo.src = videoSrc;
       modalTitle.textContent = videoTitle;

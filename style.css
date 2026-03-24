@@ -139,6 +139,7 @@ h3::before{
     width: 36px;
     height: 36px;
     background-image: url('images/kh_crown.png');
+    z-index: 900;
 }
 h4::before{
     width: 18px;
