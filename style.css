@@ -582,7 +582,7 @@ footer{
     }
     #modal{
         margin-top: 1vh;
-        max-height: 95vh;
+        height: 95vh;
         max-width: 95vw;
         width: 95vw;
     }
@@ -592,7 +592,7 @@ footer{
         align-items: center;
         overflow: hidden;
         height: 100%;
-        gap: 64px;
+        gap: 24px;
         width: 100%;
     }
     #modalVideo{
